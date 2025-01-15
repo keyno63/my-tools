@@ -1,0 +1,5 @@
+# Scala
+target/
+
+# Node modules
+node_modules/
