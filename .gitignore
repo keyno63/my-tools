@@ -1,5 +1,10 @@
 # Scala
 target/
 
+# Metals
+.metals/
+.scala-build/
+.vscode/
+
 # Node modules
 node_modules/
