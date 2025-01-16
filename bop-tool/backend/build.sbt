@@ -2,7 +2,7 @@ inThisBuild(
     List(
         version := "0.1.0-SNAPSHOT",
        scalaVersion := "3.6.0",
-        name := "bop-tool"
+        name := "bop-tool-backend"
     )
 )
 
