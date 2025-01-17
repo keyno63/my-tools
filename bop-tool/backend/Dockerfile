@@ -1,5 +1,6 @@
 ARG JDK_REVISION=eclipse-temurin
-ARG JDK_VERSION=23-jdk-noble
+# ARG JDK_VERSION=23-jdk-noble
+ARG JDK_VERSION=latest
 
 FROM ${JDK_REVISION}:${JDK_VERSION} as base
 ARG SBT_VERSION=1.10.7
@@ -30,4 +31,4 @@ RUN groupadd -g ${GROUPID} ${GROUPNAME} && \
     useradd -m -s /bin/bash -u ${GROUPID} -g ${GROUPNAME} ${USERNAME}
 USER $USERNAME
 ENV JAR_NAME=${JAR_NAME}
-# ENTRYPOINT ["/opt/java/openjdk/bin/java", "-jar", "/opt/bop-tool-backend.jar"]
+ENTRYPOINT ["/opt/java/openjdk/bin/java", "-jar", "/opt/bop-tool-backend.jar"]
