@@ -1,11 +1,13 @@
 ARG JDK_REVISION=eclipse-temurin
-# ARG JDK_VERSION=23-jdk-noble
-ARG JDK_VERSION=latest
+ARG JDK_VERSION=23-jdk-noble
 
 FROM ${JDK_REVISION}:${JDK_VERSION} as base
 ARG SBT_VERSION=1.10.7
 WORKDIR /work
-COPY . /work
+COPY project/ /work/project/
+COPY src/ /work/src/
+COPY target/ /work/target/
+COPY build.sbt /work
 RUN set -x \
     # install sbt
     && apt update \
