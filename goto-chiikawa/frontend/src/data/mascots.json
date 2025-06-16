@@ -1,0 +1,17 @@
+[
+  {
+    "id": "tokyo-a",
+    "prefecture": "東京都",
+    "imageUrl": "/images/tokyo1.png"
+  },
+  {
+    "id": "tokyo-b",
+    "prefecture": "東京都",
+    "imageUrl": "/images/tokyo2.png"
+  },
+  {
+    "id": "osaka-a",
+    "prefecture": "大阪府",
+    "imageUrl": "/images/osaka1.png"
+  }
+]
